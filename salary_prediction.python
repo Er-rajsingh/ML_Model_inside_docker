@@ -1,0 +1,6 @@
+import joblib
+
+model = joblib.load('salary.pk1')
+y = input("Enter the Employee Experience: ")
+predict = model.predict([[y]])
+print (predict)
